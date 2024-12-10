@@ -9,7 +9,7 @@ form.addEventListener('submit', async function (event) {
     const glitchSpacing = document.getElementById('glitch-spacing').value;
     const glitchFontSize = document.getElementById('glitch-font-size').value;
     try {
-        const response = await fetch('http://localhost:3000/submit', {
+        const response = await fetch('https://lab6-backend.vercel.app/submit', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -30,7 +30,7 @@ form.addEventListener('submit', async function (event) {
 
 document.getElementById('delete-btn').addEventListener('click', async () => {
     try {
-        const response = await fetch('http://localhost:3000/data/delete', {
+        const response = await fetch('https://lab6-backend.vercel.app/data/delete', {
             method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json',
