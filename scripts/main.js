@@ -30,4 +30,7 @@ function renderGlitchItem(item) {
     textList.appendChild(glitchElement);
 }
 
-document.addEventListener('DOMContentLoaded', fetchAndRenderData);
+document.addEventListener('DOMContentLoaded', () => {
+    fetchAndRenderData(); 
+    setInterval(fetchAndRenderData, 5000); 
+});
